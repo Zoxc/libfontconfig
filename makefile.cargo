@@ -24,7 +24,7 @@ endif
 
 
 CONFIGURE_FLAGS := \
-    --host=$(TARGET)
+    --build=$(HOST) --host=$(TARGET)
 
 ifeq (android,$(findstring android,$(TARGET)))
     CONFIGURE_FLAGS += \
